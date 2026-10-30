@@ -3,6 +3,9 @@ for (const [buttonSelector, dialogSelector] of [
   ['[data-open-deployment]', '#deployment-dialog'],
   ['[data-open-image-processing]', '#image-processing-dialog'],
   ['[data-open-ai-integration]', '#ai-integration-dialog'],
+  ['[data-open-cost-compute]', '#cost-compute-dialog'],
+  ['[data-open-cost-static]', '#cost-static-dialog'],
+  ['[data-open-cost-sp]', '#cost-sp-dialog'],
 ]) {
   const dialog = document.querySelector(dialogSelector);
   const opener = document.querySelector(buttonSelector);
