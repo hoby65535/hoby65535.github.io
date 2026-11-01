@@ -10,6 +10,10 @@ for (const [buttonSelector, dialogSelector] of [
   ['[data-open-metadium-overview]', '#metadium-overview-dialog'],
   ['[data-open-security-overview]', '#security-overview-dialog'],
   ['[data-open-network-overview]', '#network-overview-dialog'],
+  ['[data-open-wemix-docker]', '#wemix-docker-dialog'],
+  ['[data-open-wemix-migration]', '#wemix-migration-dialog'],
+  ['[data-open-wemix-delivery]', '#wemix-delivery-dialog'],
+  ['[data-open-wemix-monitoring]', '#wemix-monitoring-dialog'],
 ]) {
   const dialog = document.querySelector(dialogSelector);
   const opener = document.querySelector(buttonSelector);
