@@ -24,3 +24,13 @@ for (const [buttonSelector, dialogSelector] of [
     if (event.target === dialog) dialog.close();
   });
 }
+
+for (const opener of document.querySelectorAll('[data-diagram-dialog]')) {
+  const dialog = document.getElementById(opener.dataset.diagramDialog);
+  if (!dialog) continue;
+  opener.addEventListener('click', () => dialog.showModal());
+  dialog.querySelector('.close').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => {
+    if (event.target === dialog) dialog.close();
+  });
+}
